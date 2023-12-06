@@ -28,7 +28,7 @@ namespace MauiKeypad.Converters
                         return Colors.Transparent;
                 }
             }
-            return Colors.Black;
+            return Colors.Transparent;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
