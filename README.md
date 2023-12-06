@@ -1,46 +1,47 @@
-# Test na MVVM v prostøedí MAUI
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/l45qp18l)
+# Test na MVVM v prostÅ™edÃ­ MAUI
 
-Vytvoøte fiktivní aplikaci pro zadávání èíselného kódu. Pøedmìtem testu je pøipojení ViewModelu ke stránce, bindování komponent, pouití commandù s parametrem a podmínkou.
+VytvoÅ™te fiktivnÃ­ aplikaci pro zadÃ¡vÃ¡nÃ­ ÄÃ­selnÃ©ho kÃ³du. PÅ™edmÄ›tem testu je pÅ™ipojenÃ­ ViewModelu ke strÃ¡nce, bindovÃ¡nÃ­ komponent, pouÅ¾itÃ­ commandÅ¯ s parametrem a podmÃ­nkou.
 
 ## Screenshoty
 
-![Poèáteèní stav](screenshots/01.png)
+![PoÄÃ¡teÄnÃ­ stav](screenshots/01.png)
 
-![Po pár znacích](screenshots/02.png)
+![Po pÃ¡r znacÃ­ch](screenshots/02.png)
 
-![Šest znakù](screenshots/03.png)
+![Å est znakÅ¯](screenshots/03.png)
 
-![Nesprávnı kód](screenshots/04.png)
+![NesprÃ¡vnÃ½ kÃ³d](screenshots/04.png)
 
-![Správnı kód](screenshots/05.png)
+![SprÃ¡vnÃ½ kÃ³d](screenshots/05.png)
 
-## Chování aplikace
+## ChovÃ¡nÃ­ aplikace
 
-* Èíslice 
-	* Jsou aktivní pokud nemá kód délku 6 znakù a stav aplikace je InProgress
-	* Pøidávají novı znak na konec kódu
+* ÄŒÃ­slice 
+	* Jsou aktivnÃ­ pokud nemÃ¡ kÃ³d dÃ©lku 6 znakÅ¯ a stav aplikace je InProgress
+	* PÅ™idÃ¡vajÃ­ novÃ½ znak na konec kÃ³du
 * Back 
-	* Odmazává poslední znak 
-	* Je aktivní, pokud je v kódu alespoò jeden znak a stav aplikace je InProgress
+	* OdmazÃ¡vÃ¡ poslednÃ­ znak 
+	* Je aktivnÃ­, pokud je v kÃ³du alespoÅˆ jeden znak a stav aplikace je InProgress
 * OK 
-	* Vyhodnocuje zadanı kód a podle toho nastavuje vlastnost State
-	* Je aktivní pro více ne dva znaky a stav aplikace je InProgress
+	* Vyhodnocuje zadanÃ½ kÃ³d a podle toho nastavuje vlastnost State
+	* Je aktivnÃ­ pro vÃ­ce neÅ¾ dva znaky a stav aplikace je InProgress
 * Storno 
-	* Resetuje stav aplikace - tedy kód i stav
-	* Je aktivní vdy
-* Bindovatelné vlastnosti
-	* Aplikace má dvì: Code a State
+	* Resetuje stav aplikace - tedy kÃ³d i stav
+	* Je aktivnÃ­ vÅ¾dy
+* BindovatelnÃ© vlastnosti
+	* Aplikace mÃ¡ dvÄ›: Code a State
 
-## Zadání
+## ZadÃ¡nÃ­
 
 * ViewModel
-	* 2 Bindovatelné vlastnosti
+	* 2 BindovatelnÃ© vlastnosti
 	* 4 Commandy
-* Provázat vlastnosti a Commandy tak, aby se vše zobrazovalo správnì
-* Pøipojit ViewModel do stránky
-* Converter pro pøevod mezi stavem aplikace a barvou Frame pod kódem
+* ProvÃ¡zat vlastnosti a Commandy tak, aby se vÅ¡e zobrazovalo sprÃ¡vnÄ›
+* PÅ™ipojit ViewModel do strÃ¡nky
+* Converter pro pÅ™evod mezi stavem aplikace a barvou Frame pod kÃ³dem
 
-## Fragmenty kódu
+## Fragmenty kÃ³du
 
 	Code = Code.Remove(Code.Length - 1, 1);
 
